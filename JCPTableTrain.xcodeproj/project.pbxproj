@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		433E7579C54766A9D820EEDE /* libPods-JCPTableTrain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 163718B89637DF37B5EA7EDA /* libPods-JCPTableTrain.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		FCAA225A1F8E00FC0009266A /* JCPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAA22591F8E00FC0009266A /* JCPTableViewCell.m */; };
+		FCAA225D1F8EF37B0009266A /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAA225C1F8EF37B0009266A /* Post.m */; };
+		FCAA22601F8EF4040009266A /* PIXWebAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAA225F1F8EF4040009266A /* PIXWebAPIManager.m */; };
 		FCD7758C1F8DEF7E001A3EA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD7758B1F8DEF7E001A3EA2 /* AppDelegate.m */; };
 		FCD7758F1F8DEF7E001A3EA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD7758E1F8DEF7E001A3EA2 /* ViewController.m */; };
 		FCD775921F8DEF7E001A3EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD775901F8DEF7E001A3EA2 /* Main.storyboard */; };
@@ -16,6 +20,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		163718B89637DF37B5EA7EDA /* libPods-JCPTableTrain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCPTableTrain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE2122104DABD64D84406CF /* Pods-JCPTableTrain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCPTableTrain.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCPTableTrain/Pods-JCPTableTrain.release.xcconfig"; sourceTree = "<group>"; };
+		E62A982EDE676A49982847C2 /* Pods-JCPTableTrain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCPTableTrain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCPTableTrain/Pods-JCPTableTrain.debug.xcconfig"; sourceTree = "<group>"; };
+		FCAA22581F8E00FC0009266A /* JCPTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCPTableViewCell.h; sourceTree = "<group>"; };
+		FCAA22591F8E00FC0009266A /* JCPTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCPTableViewCell.m; sourceTree = "<group>"; };
+		FCAA225B1F8EF37B0009266A /* Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		FCAA225C1F8EF37B0009266A /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		FCAA225E1F8EF4040009266A /* PIXWebAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIXWebAPIManager.h; sourceTree = "<group>"; };
+		FCAA225F1F8EF4040009266A /* PIXWebAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PIXWebAPIManager.m; sourceTree = "<group>"; };
 		FCD775871F8DEF7E001A3EA2 /* JCPTableTrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCPTableTrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD7758A1F8DEF7E001A3EA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FCD7758B1F8DEF7E001A3EA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,17 +46,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				433E7579C54766A9D820EEDE /* libPods-JCPTableTrain.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		653FB4C1BB147797B4AC79CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E62A982EDE676A49982847C2 /* Pods-JCPTableTrain.debug.xcconfig */,
+				3FE2122104DABD64D84406CF /* Pods-JCPTableTrain.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A015ECB6381E7619DF06092C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				163718B89637DF37B5EA7EDA /* libPods-JCPTableTrain.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FCD7757E1F8DEF7E001A3EA2 = {
 			isa = PBXGroup;
 			children = (
 				FCD775891F8DEF7E001A3EA2 /* JCPTableTrain */,
 				FCD775881F8DEF7E001A3EA2 /* Products */,
+				653FB4C1BB147797B4AC79CC /* Pods */,
+				A015ECB6381E7619DF06092C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +100,12 @@
 				FCD775951F8DEF7E001A3EA2 /* LaunchScreen.storyboard */,
 				FCD775981F8DEF7E001A3EA2 /* Info.plist */,
 				FCD775991F8DEF7E001A3EA2 /* main.m */,
+				FCAA22581F8E00FC0009266A /* JCPTableViewCell.h */,
+				FCAA22591F8E00FC0009266A /* JCPTableViewCell.m */,
+				FCAA225B1F8EF37B0009266A /* Post.h */,
+				FCAA225C1F8EF37B0009266A /* Post.m */,
+				FCAA225E1F8EF4040009266A /* PIXWebAPIManager.h */,
+				FCAA225F1F8EF4040009266A /* PIXWebAPIManager.m */,
 			);
 			path = JCPTableTrain;
 			sourceTree = "<group>";
@@ -78,9 +117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCD7759D1F8DEF7E001A3EA2 /* Build configuration list for PBXNativeTarget "JCPTableTrain" */;
 			buildPhases = (
+				FFB5284CBC0EDC906F9EDC75 /* [CP] Check Pods Manifest.lock */,
 				FCD775831F8DEF7E001A3EA2 /* Sources */,
 				FCD775841F8DEF7E001A3EA2 /* Frameworks */,
 				FCD775851F8DEF7E001A3EA2 /* Resources */,
+				B9E112584362FE36110D140A /* [CP] Embed Pods Frameworks */,
+				B9E78BEA70A34186005DBDE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,12 +179,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B9E112584362FE36110D140A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCPTableTrain/Pods-JCPTableTrain-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9E78BEA70A34186005DBDE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCPTableTrain/Pods-JCPTableTrain-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFB5284CBC0EDC906F9EDC75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JCPTableTrain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FCD775831F8DEF7E001A3EA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCAA225D1F8EF37B0009266A /* Post.m in Sources */,
 				FCD7758F1F8DEF7E001A3EA2 /* ViewController.m in Sources */,
+				FCAA225A1F8E00FC0009266A /* JCPTableViewCell.m in Sources */,
+				FCAA22601F8EF4040009266A /* PIXWebAPIManager.m in Sources */,
 				FCD7759A1F8DEF7E001A3EA2 /* main.m in Sources */,
 				FCD7758C1F8DEF7E001A3EA2 /* AppDelegate.m in Sources */,
 			);
@@ -276,11 +372,12 @@
 		};
 		FCD7759E1F8DEF7E001A3EA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E62A982EDE676A49982847C2 /* Pods-JCPTableTrain.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JCPTableTrain/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = tw.pixnet.JCPTableTrain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -289,11 +386,12 @@
 		};
 		FCD7759F1F8DEF7E001A3EA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FE2122104DABD64D84406CF /* Pods-JCPTableTrain.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JCPTableTrain/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = tw.pixnet.JCPTableTrain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
