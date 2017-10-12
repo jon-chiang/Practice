@@ -11,5 +11,7 @@
 @interface PIXWebAPIManager : NSObject
 
 + (instancetype)sharedInstance;
+- (void)fetchFromURL:(NSString * _Nonnull)urlString parameters:(NSDictionary *)parameters completion:(void(^_Nullable)(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error))block;
+
 
 @end

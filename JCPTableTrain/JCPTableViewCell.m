@@ -22,9 +22,9 @@ static NSString *reuseID;
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         reuseID  = reuseIdentifier;
-        self.thumbImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
-        self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
-        self.detailLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 22, 100, 22)];
+        self.thumbImageView = [[UIImageView alloc] init];
+        self.titleLabel = [[UILabel alloc] init];
+        self.detailLabel = [[UILabel alloc] init];
         self.detailLabel.numberOfLines = 3;
         [self.detailLabel setFont:[UIFont fontWithName:@"Farah" size:12.0]];
         [self.detailLabel sizeToFit];
